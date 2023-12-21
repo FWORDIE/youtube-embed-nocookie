@@ -15,7 +15,7 @@
   let videoInfo = {};
   onMount(async () => {
     const res = await fetch(
-      `//www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${id}&format=json`
+      `//www.youtube-nocookie.com/oembed?url=https://www.youtube-nocookie.com/watch?v=${id}&format=json`
     );
     videoInfo = await res.json();
     title = videoInfo?.title;
